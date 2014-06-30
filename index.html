@@ -1,0 +1,33 @@
+<!DOCTYPE html>     
+<html>
+<head>
+<title>Graphx</title>
+
+<link rel="stylesheet" href="style.css" >
+<link rel="stylesheet" href="../FortAwesome-Font-Awesome-v3.0.0-2-g16b6298/FortAwesome-Font-Awesome-16b6298/css/font-awesome.min.css" />
+<script src="js/jquery-1.8.2.js"></script>
+<script src="js/paperjs-0.22/lib/paper.js"></script>
+<script type="text/javascript" src="graphx.js"></script>
+</head>
+
+<body>
+<div id=form onMouseOver="if(formslided)slideForm();" onMouseOut="if(formslided)resetForm();">
+<center>
+<a href="index.html" id='logo'>logo</a>
+<form onSubmit="add = false; draw(); return false;">
+y = <input type="text" name="degree" id="exp" placeholder="Expression" /><br />
+</form>
+<button name='done' onClick="add=false;draw();">plot</button>
+<button onClick="add=true; draw();">add</button>
+<br ><br ><br>
+Press [ Shift ] and drag to zoom<br >
+press [ u ] to undo<br >
+press [ r ] to redo<br ><br >
+functions : sin | cos | tan | log | exp | abs | sqrt<br >
+constants : pi | e
+<p id='pull'>graphx   <i class="icon-double-angle-down"></i> </p>
+</center>
+</div>
+<canvas id="canvas" resize></canvas> 
+</body>
+</html>

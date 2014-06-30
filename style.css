@@ -1,0 +1,95 @@
+@charset "utf-8";
+/* CSS Document */
+*, *:after, *:before
+{
+	box-sizing: border-box;
+	
+}
+#form
+{
+	position: fixed;
+	width: 33%;
+	left: 32.5%;
+	
+	background: white;
+	border: 1px solid rgba(0,0,0,0.1);
+	-webkit-transition: all 0.4s;
+	z-index: 2;
+	font-family: blanch;
+	font-size: 22px;
+	color: #333;
+}
+#form:hover
+{
+	border: 1px solid #999;
+}
+#form #exp
+{font-family: blanch;
+	font-size: 22px;
+	color: #333;
+	line-height: 35px;
+	width: 300px;
+	border : 1px solid #CCC;
+	outline: none;
+	margin-bottom: 20px;
+	padding-left: 10px;
+	-webkit-transition: border 0.3s linear;
+}
+#form #exp:focus
+{
+	border: 1px solid #777;
+	background: #F8F8F8;
+}
+#form #exp:hover
+{
+	border: 1px solid #111;
+}
+a#logo
+{
+	display: block;
+	height: 192px;
+	width: 256px;
+	background: url(logo.png) center;
+	background-size: contain;
+	color: transparent;
+	margin: 20px 0px 50px 0px;
+}
+#form button
+{font-family: blanch;
+	font-size: 22px;
+	color: #333;
+	background: none;
+	outline: none;
+	border: 1px solid #666;
+	padding: 3px 20px;
+	margin: 10px;
+cursor: pointer;
+-webkit-transition: border 0.2s linear;
+}
+#form button:hover
+{
+	border-color: black;
+}
+#form button:active
+{
+	-webkit-transform: translateY(3px);
+}
+#form p#pull
+{
+	display: none;
+	-webkit-transition: all 0.3s linear;
+	position: fixed;
+	color: #333;
+	top: 5px;
+	left: 48%;
+}
+canvas
+{ width: 100%;
+	padding : 0px;
+	margin: 0px;
+}
+@font-face
+{
+	font-family: "blanch";
+	src: url(BLANCH_CONDENSED.otf);
+}
